@@ -17,83 +17,76 @@
     .box { background:#fff; border-radius:10px; padding:25px; margin-bottom:25px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
     .box h3 { color:#0a1f44; margin-top:0;}
     .box ul { padding-left:20px;}
-    .highlight { color:#f0b429; font-weight:bold;}
-    .cta-button { display:inline-block; padding:12px 25px; background:#f0b429; color:#0a1f44; text-decoration:none; font-weight:bold; border-radius:5px; margin-top:15px;}
-    .cta-button:hover { background:#0a162d; color:#f0b429;}
-    /* Dropdown form */
-    .dropdown { position:relative; display:block; margin-top:20px;}
-    .dropbtn { background:#0a1f44; color:#fff; padding:12px 20px; font-size:16px; border:none; cursor:pointer; border-radius:5px; font-weight:bold; transition:0.3s;}
-    .dropbtn:hover { background:#f0b429; color:#0a1f44;}
-    .dropdown-content { display:none; position:absolute; background:#fff; min-width:300px; padding:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-radius:10px; z-index:1; top:50px;}
-    .dropdown-content input, .dropdown-content textarea, .dropdown-content button { width:100%; margin-bottom:15px; padding:10px; border-radius:5px; border:1px solid #ccc;}
-    .dropdown-content button { background:#f0b429; color:#0a1f44; border:none; font-weight:bold; cursor:pointer;}
-    .dropdown-content button:hover { background:#0a162d; color:#f0b429;}
-    .dropdown:hover .dropdown-content { display:block;}
+    .highlight-box { background:#f0b429; color:#0a1f44; padding:20px; border-radius:10px; margin:30px 0; text-align:center; font-weight:bold; font-size:1.1rem;}
+    form { background:#fff; padding:25px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+    form input, form textarea, form select, form button { width:100%; padding:12px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; font-size:1rem;}
+    form button { background:#f0b429; color:#0a1f44; border:none; font-weight:bold; cursor:pointer;}
+    form button:hover { background:#0a162d; color:#f0b429;}
     footer { background:#0a1f44; color:#fff; text-align:center; padding:20px; margin-top:40px;}
     footer p { margin:0;}
+    @media(max-width:768px){ header h1 { font-size:2rem; } header p { font-size:1rem; } }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="software.html">Software</a>
-    <a href="recruitment.html">Recruitment</a>
-    <a href="Services.html">Services</a>
-    <a href="travel.html">Tours & Travel</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 
-  <header>
-    <h1>Tours & Travel</h1>
-    <p>Safe, seamless, and customized travel experiences for individuals, groups, and corporate relocations.</p>
-  </header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="software.html">Software</a>
+  <a href="recruitment.html">Recruitment</a>
+  <a href="Services.html">Services</a>
+  <a href="travel.html">Tours & Travel</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <section>
-    <div class="box">
-      <h3>Our Travel Services</h3>
-      <ul>
-        <li>Domestic & international tour packages</li>
-        <li>Flight bookings, hotel arrangements, and itineraries</li>
-        <li>Visa & travel documentation assistance</li>
-        <li>24/7 emergency travel support</li>
-        <li>Integration with recruitment & relocation services</li>
-        <li>Exclusive packages for frequent travelers</li>
-        <li>Referrals & guidance for refugees/migrants (non-legal advice)</li>
-      </ul>
-    </div>
+<header>
+  <h1>Tours & Travel</h1>
+  <p>Safe, seamless, and customized travel experiences for individuals, groups, and corporate relocations.</p>
+</header>
 
-    <div class="box">
-      <h3>Why Choose Nexus Tech Travel?</h3>
-      <ul>
-        <li>Experienced travel coordinators</li>
-        <li>Transparent pricing & clear communication</li>
-        <li>Focus on safety, comfort, and convenience</li>
-        <li>Custom solutions for corporate & individual clients</li>
-        <li>Integration with relocation & refugee support services</li>
-      </ul>
-    </div>
+<section>
+  <div class="box">
+    <h3>Our Travel Services</h3>
+    <ul>
+      <li>Domestic & international tour packages</li>
+      <li>Flight bookings, hotel arrangements, and customized itineraries</li>
+      <li>Visa & travel documentation assistance</li>
+      <li>Corporate relocation & travel integration</li>
+      <li>24/7 emergency travel support</li>
+      <li>Exclusive packages and frequent traveler offers</li>
+      <li>Referrals & guidance for refugees/migrants (non-legal advice)</li>
+    </ul>
+  </div>
 
-    <div class="box">
-      <h3>Request a Travel Quote</h3>
-      <div class="dropdown">
-        <button class="dropbtn">Open Contact Form</button>
-        <div class="dropdown-content">
-          <form action="mailto:info@nexustechinternationalltd.co.uk" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="text" name="subject" placeholder="Subject" required>
-            <textarea name="message" rows="5" placeholder="Message" required></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-      </div>
-      <p>Or call us at <a href="tel:+447516003125">07516003125</a></p>
-    </div>
-  </section>
+  <div class="highlight-box">
+    Non-legal guidance for refugees and migrants: assistance, referrals, and practical support to navigate UK systems safely and confidently.
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Nexus Tech International Ltd. All rights reserved.</p>
-  </footer>
+  <div class="box">
+    <h3>Request Your Travel Quote</h3>
+    <form action="mailto:info@nexustechinternationalltd.co.uk" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="date" name="traveldate" placeholder="Travel Date" required>
+      <select name="reason" required>
+        <option value="">Reason for Contact</option>
+        <option value="Tour Inquiry">Tour Inquiry</option>
+        <option value="Corporate Relocation">Corporate Relocation</option>
+        <option value="Visa Assistance">Visa Assistance</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea name="message" rows="5" placeholder="Message / Special Requirements" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top:15px;">Or call us at <a href="tel:+447516003125">07516003125</a></p>
+  </div>
+
+</section>
+
+<footer>
+  <p>&copy; 2025 Nexus Tech International Ltd. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
