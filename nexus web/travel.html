@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Tours & Travel - Nexus Tech International Ltd</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Nexus Tech International Ltd provides seamless and safe travel services, including corporate, personal, and refugee/migrant travel guidance.">
+<meta name="description" content="Nexus Tech International Ltd provides safe and seamless travel services for personal, corporate, and refugee/migrant needs.">
 <style>
 body, h1, h2, h3, p, ul, li, a, input, select, textarea, button {margin:0; padding:0; font-family:'Segoe UI',Arial,sans-serif;}
 body {background:#f7f9fc; color:#222; line-height:1.6;}
@@ -18,11 +18,11 @@ section {max-width:1100px; margin:40px auto; padding:20px;}
 .box {background:#fff; padding:30px; margin-bottom:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1);}
 .box h3 {color:#0a1f44; margin-bottom:15px;}
 .box ul {padding-left:20px; list-style-type:disc; margin-bottom:15px;}
-.highlight-box {background:#f0b429; color:#0a1f44; padding:20px; border-radius:10px; text-align:center; font-weight:bold; font-size:1.1rem; margin-top:30px;}
 form {display:flex; flex-direction:column; gap:15px; margin-top:20px;}
 input, select, textarea {padding:10px; border-radius:6px; border:1px solid #ccc; width:100%; font-size:1rem;}
 button {padding:12px; background:#0a1f44; color:#fff; border:none; border-radius:6px; cursor:pointer; font-weight:bold; transition:background .3s;}
 button:hover {background:#f0b429; color:#0a1f44;}
+footer {background:#0a1f44; color:#fff; text-align:center; padding:20px;}
 @media(max-width:768px) {header h1 {font-size:2rem;} header p {font-size:1rem;}}
 </style>
 </head>
@@ -30,17 +30,17 @@ button:hover {background:#f0b429; color:#0a1f44;}
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="About.html">About</a>
-  <a href="Software.html">Software</a>
-  <a href="Recruitment.html">Recruitment</a>
+  <a href="about.html">About</a>
+  <a href="software.html">Software</a>
+  <a href="recruitment.html">Recruitment</a>
   <a href="Services.html">Services</a>
-  <a href="Travel.html">Tours & Travel</a>
-  <a href="Contact.html">Contact</a>
+  <a href="travel.html">Tours & Travel</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
 <header>
   <h1>Tours & Travel</h1>
-  <p>Professional, safe, and seamless travel solutions for personal, corporate, and refugee/migrant needs.</p>
+  <p>Professional, safe, and seamless travel services for individuals, corporate groups, and refugee/migrant clients.</p>
 </header>
 
 <section>
@@ -50,34 +50,35 @@ button:hover {background:#f0b429; color:#0a1f44;}
     <ul>
       <li>Domestic & international tour packages</li>
       <li>Flight bookings, hotel reservations, and local transport</li>
-      <li>Customized itineraries for individuals, families, and corporate groups</li>
-      <li>Visa and travel document assistance</li>
+      <li>Customized itineraries for personal, family, and corporate travel</li>
+      <li>Visa and travel documentation assistance</li>
       <li>Corporate relocation travel support</li>
       <li>Emergency travel support 24/7</li>
-      <li>Exclusive packages for frequent travelers</li>
-      <li>Refugee/migrant travel guidance and non-legal support</li>
+      <li>Refugee and migrant travel guidance and non-legal support</li>
       <li>Group travel coordination and team-building trips</li>
-      <li>Travel insurance and risk assessment advice</li>
+      <li>Travel insurance advice and risk assessment</li>
     </ul>
   </div>
 
   <div class="box">
     <h3>Contact Us for Your Travel Plan</h3>
-    <p>Please fill out the form below and our team will assist you promptly.</p>
+    <p>Use the form below to send us your request. Select your reason for contact from the options provided.</p>
     <form action="mailto:info@nexustechinternationalltd.co.uk" method="post" enctype="text/plain">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="tel" name="phone" placeholder="Phone Number">
-      <input type="date" name="travel_date" placeholder="Travel Date" required>
-      <select name="travel_type" required>
-        <option value="">Select Travel Type</option>
-        <option value="personal">Personal</option>
-        <option value="family">Family</option>
-        <option value="corporate">Corporate/Business</option>
-        <option value="refugee_migrant">Refugee/Migrant Support</option>
-        <option value="group">Group/Team Travel</option>
+      <input type="date" name="travel_date" placeholder="Preferred Travel Date" required>
+      <select name="reason" required>
+        <option value="">Select Reason for Contact</option>
+        <option value="ticket_booking">Ticket Booking</option>
+        <option value="visa_assistance">Visa Assistance</option>
+        <option value="tour_package">Tour Package</option>
+        <option value="corporate_travel">Corporate Travel</option>
+        <option value="group_travel">Group Travel</option>
+        <option value="refugee_migrant_support">Refugee/Migrant Support</option>
+        <option value="other">Other</option>
       </select>
-      <textarea name="reason" rows="5" placeholder="Reason for Contact / Special Requests" required></textarea>
+      <textarea name="message" rows="5" placeholder="Additional details or special requests"></textarea>
       <button type="submit">Submit Request</button>
     </form>
   </div>
