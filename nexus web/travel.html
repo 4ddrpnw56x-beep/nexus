@@ -1,81 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Tours & Travel - Nexus Tech International Ltd</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Customized travel services by Nexus Tech International Ltd: tours, flights, hotels, visa support, and corporate travel.">
-<style>
-body, h1, h2, h3, p, ul, li, a { margin:0; padding:0; font-family:'Segoe UI', Arial, sans-serif; }
-body { background:#f0f4f8; color:#222; line-height:1.6; }
-nav { background:#0a1f44; display:flex; justify-content:center; gap:20px; padding:15px; position:sticky; top:0; z-index:100; }
-nav a { color:#fff; text-decoration:none; font-weight:600; padding:8px 15px; transition:0.3s; }
-nav a:hover { color:#f0b429; }
-header { background:linear-gradient(135deg,#0a1f44,#f0b429); color:#fff; text-align:center; padding:80px 20px; }
-header h1 { font-size:2.5rem; margin-bottom:15px; }
-header p { font-size:1.2rem; max-width:900px; margin:auto; }
-section { max-width:1100px; margin:40px auto; padding:20px; }
-.box { background:#fff; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
-.box h3 { color:#0a1f44; margin-bottom:15px; }
-.box ul { padding-left:20px; list-style-type:disc; margin-bottom:15px; }
-.cta-button { display:inline-block; padding:12px 25px; background-color:#f0b429; color:#0a1f44; text-decoration:none; font-weight:bold; border-radius:5px; transition:0.3s; }
-.cta-button:hover { background:#0a162d; color:#f0b429; }
-footer { background:#0a1f44; color:#fff; text-align:center; padding:20px; margin-top:40px; }
-@media(max-width:768px){ header h1{font-size:2rem;} header p{font-size:1rem;} }
-</style>
+  <meta charset="UTF-8">
+  <title>Tours & Travel - Nexus Tech International Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Customized tours, flight bookings, visa assistance, and corporate relocation support by Nexus Tech International Ltd.">
+  <style>
+    body { font-family:'Segoe UI', Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f9f9f9; color:#222;}
+    nav { background:#0a1f44; padding:15px; text-align:center;}
+    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold;}
+    nav a:hover { color:#f0b429;}
+    header { padding:50px 20px; text-align:center; background:#eef2f7;}
+    header h1 { color:#0a1f44; font-size:2.5rem; margin-bottom:10px;}
+    header p { font-size:1.2rem; color:#333;}
+    section { max-width:1100px; margin:30px auto; padding:20px;}
+    .box { background:#fff; border-radius:10px; padding:25px; margin-bottom:25px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+    .box h3 { color:#0a1f44; margin-top:0;}
+    .box ul { padding-left:20px;}
+    .highlight { color:#f0b429; font-weight:bold;}
+    .cta-button { display:inline-block; padding:12px 25px; background:#f0b429; color:#0a1f44; text-decoration:none; font-weight:bold; border-radius:5px; margin-top:15px;}
+    .cta-button:hover { background:#0a162d; color:#f0b429;}
+    /* Dropdown form */
+    .dropdown { position:relative; display:block; margin-top:20px;}
+    .dropbtn { background:#0a1f44; color:#fff; padding:12px 20px; font-size:16px; border:none; cursor:pointer; border-radius:5px; font-weight:bold; transition:0.3s;}
+    .dropbtn:hover { background:#f0b429; color:#0a1f44;}
+    .dropdown-content { display:none; position:absolute; background:#fff; min-width:300px; padding:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-radius:10px; z-index:1; top:50px;}
+    .dropdown-content input, .dropdown-content textarea, .dropdown-content button { width:100%; margin-bottom:15px; padding:10px; border-radius:5px; border:1px solid #ccc;}
+    .dropdown-content button { background:#f0b429; color:#0a1f44; border:none; font-weight:bold; cursor:pointer;}
+    .dropdown-content button:hover { background:#0a162d; color:#f0b429;}
+    .dropdown:hover .dropdown-content { display:block;}
+    footer { background:#0a1f44; color:#fff; text-align:center; padding:20px; margin-top:40px;}
+    footer p { margin:0;}
+  </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="software.html">Software</a>
+    <a href="recruitment.html">Recruitment</a>
+    <a href="Services.html">Services</a>
+    <a href="travel.html">Tours & Travel</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="software.html">Software</a>
-  <a href="recruitment.html">Recruitment</a>
-  <a href="Services.html">Services</a>
-  <a href="travel.html">Tours & Travel</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <header>
+    <h1>Tours & Travel</h1>
+    <p>Safe, seamless, and customized travel experiences for individuals, groups, and corporate relocations.</p>
+  </header>
 
-<header>
-  <h1>Travel & Tours Services</h1>
-  <p>Custom travel planning, corporate trips, and complete travel solutions with safety, comfort, and convenience in mind.</p>
-</header>
+  <section>
+    <div class="box">
+      <h3>Our Travel Services</h3>
+      <ul>
+        <li>Domestic & international tour packages</li>
+        <li>Flight bookings, hotel arrangements, and itineraries</li>
+        <li>Visa & travel documentation assistance</li>
+        <li>24/7 emergency travel support</li>
+        <li>Integration with recruitment & relocation services</li>
+        <li>Exclusive packages for frequent travelers</li>
+        <li>Referrals & guidance for refugees/migrants (non-legal advice)</li>
+      </ul>
+    </div>
 
-<section>
-  <div class="box">
-    <h3>Our Travel Services</h3>
-    <ul>
-      <li>Domestic & International Tours</li>
-      <li>Customized Itineraries</li>
-      <li>Flight, Hotel & Local Transport Booking</li>
-      <li>Visa & Documentation Assistance</li>
-      <li>Corporate Travel Integration</li>
-      <li>24/7 Travel Support & Emergency Assistance</li>
-      <li>Exclusive Packages & Frequent Traveler Offers</li>
-    </ul>
-  </div>
+    <div class="box">
+      <h3>Why Choose Nexus Tech Travel?</h3>
+      <ul>
+        <li>Experienced travel coordinators</li>
+        <li>Transparent pricing & clear communication</li>
+        <li>Focus on safety, comfort, and convenience</li>
+        <li>Custom solutions for corporate & individual clients</li>
+        <li>Integration with relocation & refugee support services</li>
+      </ul>
+    </div>
 
-  <div class="box">
-    <h3>Why Choose Nexus Tech Travel</h3>
-    <ul>
-      <li>Professional & Experienced Travel Coordinators</li>
-      <li>Transparent Pricing & Clear Communication</li>
-      <li>Integration with Recruitment & Relocation Services</li>
-      <li>Focus on Safety, Comfort & Convenience</li>
-      <li>Tailored Travel Experiences for Individuals & Businesses</li>
-    </ul>
-  </div>
+    <div class="box">
+      <h3>Request a Travel Quote</h3>
+      <div class="dropdown">
+        <button class="dropbtn">Open Contact Form</button>
+        <div class="dropdown-content">
+          <form action="mailto:info@nexustechinternationalltd.co.uk" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <p>Or call us at <a href="tel:+447516003125">07516003125</a></p>
+    </div>
+  </section>
 
-  <div class="box">
-    <h3>Plan Your Trip</h3>
-    <p>Reach out to our travel team for custom itineraries or corporate travel solutions.</p>
-    <a href="contact.html" class="cta-button">Request Your Travel Quote</a>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2025 Nexus Tech International Ltd. All rights reserved.</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Nexus Tech International Ltd. All rights reserved.</p>
+  </footer>
 </body>
 </html>
