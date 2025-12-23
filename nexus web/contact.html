@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Contact Us - Nexus Tech International Ltd</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Contact Nexus Tech International Ltd via our drop-down form for services, inquiries, or non-legal guidance for migrants and refugees.">
-<style>
-body, h1, h2, h3, p, ul, li, a, form, input, textarea, button { margin:0; padding:0; font-family:'Segoe UI', Arial, sans-serif; }
-body { background:#f0f4f8; color:#222; line-height:1.6; }
-nav { background:#0a1f44; display:flex; justify-content:center; gap:20px; padding:15px; position:sticky; top:0; z-index:100; }
-nav a { color:#fff; text-decoration:none; font-weight:600; padding:8px 15px; transition:0.3s; }
-nav a:hover { color:#f0b429; }
-header { background:linear-gradient(135deg,#0a1f44,#f0b429); color:#fff; text-align:center; padding:80px 20px; }
-header h1 { font-size:2.5rem; margin-bottom:15px; }
-header p { font-size:1.2rem; max-width:900px; margin:auto; }
-section { max-width:700px; margin:40px auto; padding:20px; }
-form { background:#fff; padding:30px; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1); display:flex; flex-direction:column; gap:15px; }
-input, textarea { padding:12px; border:1px solid #ccc; border-radius:5px; width:100%; }
-button { padding:12px; background:#f0b429; color:#0a1f44; border:none; font-weight:bold; cursor:pointer; border-radius:5px; transition:0.3s; }
-button:hover { background:#0a162d; color:#f0b429; }
-footer { background:#0a1f44; color:#fff; text-align:center; padding:20px; margin-top:40px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Contact - Nexus Tech International Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Nexus Tech International Ltd for tech, recruitment, travel, and refugee support services.">
+  <style>
+    body { font-family:'Segoe UI', Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f9f9f9; color:#222;}
+    nav { background:#0a1f44; padding:15px; text-align:center;}
+    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold;}
+    nav a:hover { color:#f0b429;}
+    header { padding:50px 20px; text-align:center; background:#eef2f7;}
+    header h1 { color:#0a1f44; font-size:2.5rem; margin-bottom:10px;}
+    section { max-width:700px; margin:30px auto; padding:20px;}
+    form { background:#fff; padding:25px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+    input, textarea { width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;}
+    button { padding:12px 25px; background:#f0b429; color:#0a1f44; border:none; font-weight:bold; border-radius:5px; cursor:pointer;}
+    button:hover { background:#0a162d; color:#f0b429;}
+    footer { background:#0a1f44; color:#fff; text-align:center; padding:20px; margin-top:40px;}
+    footer p { margin:0;}
+  </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="software.html">Software</a>
+    <a href="recruitment.html">Recruitment</a>
+    <a href="Services.html">Services</a>
+    <a href="travel.html">Tours & Travel</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="software.html">Software</a>
-  <a href="recruitment.html">Recruitment</a>
-  <a href="Services.html">Services</a>
-  <a href="travel.html">Tours & Travel</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <header>
+    <h1>Contact Us</h1>
+    <p>Fill out the form below and we will get back to you promptly.</p>
+  </header>
 
-<header>
-  <h1>Contact Us</h1>
-  <p>Fill out the form below to get in touch for services, inquiries, or non-legal guidance for migrants and refugees.</p>
-</header>
+  <section>
+    <form action="mailto:info@nexustechinternationalltd.co.uk" method="post" enctype="text/plain">
+      <label>Name</label>
+      <input type="text" name="name" required>
+      <label>Email</label>
+      <input type="email" name="email" required>
+      <label>Subject</label>
+      <input type="text" name="subject" required>
+      <label>Message</label>
+      <textarea name="message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-<section>
-  <form action="mailto:info@nexustechinternationalltd.co.uk" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="text" name="subject" placeholder="Subject" required>
-    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-<footer>
-  <p>&copy; 2025 Nexus Tech International Ltd. All rights reserved.</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Nexus Tech International Ltd. All rights reserved.</p>
+  </footer>
 </body>
 </html>
